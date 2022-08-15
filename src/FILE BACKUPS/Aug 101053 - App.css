@@ -1,0 +1,94 @@
+/*  Imports  */
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/*  App header CSS  */
+.webHeader_container {
+    background-image: linear-gradient(135deg, rgba(52, 152, 219,0.5) 0%,rgba(243, 65, 65, 0.4) 100%), url("http://i.imgbox.com/LmWSE419.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.webHeader_h1 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    top: 35%;
+    bottom: 10%;
+    left: 50%;
+    font-family: "Calligraffitti";
+    font-weight: normal;
+    font-size: 70px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    transform: translate3d(-50%,-50%,0);
+}
+.webHeader_h2 {
+    color: #fff;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    font-family: "Calligraffitti";
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    font-size: 30px;
+}
+@media only screen and (max-width : 768px) {
+    h1 {
+    font-size: 3em;
+    }
+}
+
+/*  Page CSS  */
+.page_background_lightblue{
+    background-color:lightblue;
+}
+.page_background_black{
+    background-color:black;
+}
+.page_background_cadetblue{
+    background-color:cadetblue;
+}
+.page_background_darkgrey{
+    background-color:darkgrey;
+}
+.page_background_grey{
+    background-color:grey;
+}
+.page_background_lightslategrey{
+    background-color:lightslategrey;
+}
+.page_margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+/* Favourite Text */
+.text_p {
+    color: #000000;
+    font-family: "Quicksand";
+    font-size: 20px;
+}
+.text_center {
+    text-align: center;
+}
+.text_left {
+    text-align: left;
+}
+.text_right {
+    text-align: right;
+}
+
+/* Login Form */
+.form_margin{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
