@@ -1,5 +1,9 @@
 # property-manager
+This project is a website to manage properties.  This works on websites and devices (must be ported)
 
+
+
+------------------------
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

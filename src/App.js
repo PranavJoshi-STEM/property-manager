@@ -19,7 +19,7 @@ class App extends Component {
       posts: []
     };
   }
-  state = {
+  /*state = {
     data:null
   };
   componentDidMount = () => {
@@ -37,7 +37,7 @@ class App extends Component {
       throw Error(body.message) 
     }
     return body;
-  };
+  };*/
 
   render(){
      return(

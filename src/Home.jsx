@@ -2,16 +2,36 @@
 import React, {Component} from 'react'
 import './AppTools.css';
 import {Card, Button} from 'react-bootstrap'
-import Communicate from './jsTools';
-class Home extends Component {
-  componentDidMount() {
 
+class Home extends Component {
+  // GET DATA FROM SERVER
+  state = {
+    text:null,
+    users:null
+  };
+  componentDidMount = () => {
+    this.callBackendAPI()
+      .then(res => this.setState(
+        {text: res.text, 
+        users: res.users,}
+        ))
+      .catch(err => console.log(err));
   }
+  callBackendAPI = async () => {
+    const response = await fetch('/express_backend');
+    const body = await response.json();
+    if (response.status !== 200) {
+      throw Error(body.message) 
+    }
+    return body;
+  };
 
   // RENDER CODE
   render () {
     return (
       <div>
+        <p>{this.state.text}</p>
+        <p>{this.state.users}</p>
           <div className="page_background_cadetblue">
               {/* Header */}
               <div className="page_background_lightblue">
@@ -38,7 +58,7 @@ class Home extends Component {
                   </p>
                   <br/>
               </div>
-              <p>{Communicate.state.data}</p>
+
               {/* Cards */}
               <div>
                 <table>
@@ -171,4 +191,4 @@ class Home extends Component {
   }
 }
 
-  export default Home;
+export default Home;
