@@ -4,11 +4,7 @@ import './AppTools.css';
 import {Card, Button} from 'react-bootstrap'
 
 class Home extends Component {
-  // GET DATA FROM SERVER
-  state = {
-    text:null,
-    users:null
-  };
+  state = {} //state will copy the dictionary it recieves
   componentDidMount = () => {
     this.callBackendAPI()
       .then(res => this.setState(
@@ -27,11 +23,11 @@ class Home extends Component {
   };
 
   // RENDER CODE
-  render () {
-    return (
+  render(){
+    return(
       <div>
-        <p>{this.state.text}</p>
-        <p>{this.state.users}</p>
+        <p>{JSON.stringify(this.state.text)}</p>
+        <p>{JSON.stringify(this.state.users)}</p>
           <div className="page_background_cadetblue">
               {/* Header */}
               <div className="page_background_lightblue">
@@ -144,44 +140,43 @@ class Home extends Component {
                       <Card.Body>
                         <Card.Title> Login to your account now! </Card.Title>
                         <Card.Text>
-                          Click me right now!
-                        </Card.Text>
-                        <Button variant="secondary" href="https://www.youtube.com">Readmore</Button>
-                      </Card.Body>
-                    </Card>
-                  </ul>
-                  <ul>
-                    <Card className="mb-3 && form_margin" style={{color:"#000"}}>
-                      <Card.Body>
-                        <Card.Title> Login to your account now! </Card.Title>
-                        <Card.Text>
-                          Click me right now!
-                        </Card.Text>
-                        <Button variant="secondary">Readmore</Button>
-                      </Card.Body>
-                    </Card>
-                  </ul>
-                  <ul>
-                    <Card className="mb-3 && form_margin" style={{color:"#000"}}>
-                      <Card.Body>
-                        <Card.Title> Login to your account now! </Card.Title>
-                        <Card.Text>
-                          Click me right now!
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
+                          Click me right now!<br/>
                         </Card.Text>
                         <Button variant="secondary">Readmore</Button>
                       </Card.Body>
                     </Card>
                   </ul>
+                  <br/>
                   <ul>
-                    <Card className="mb-3 && form_margin" style={{color:"#000"}}>
-                      <Card.Body>
-                        <Card.Title> Login to your account now! </Card.Title>
-                        <Card.Text>
-                          Click me right now!
-                        </Card.Text>
-                        <Button variant="secondary">Readmore</Button>
-                      </Card.Body>
-                    </Card>
+                      <Card className="mb-3 && form_margin" style={{color:"#000"}}>
+                        <Card.Body>
+                          <Card.Title> Login to your account now! </Card.Title>
+                          <Card.Text>
+                            Click me right now!<br/>
+                            Click me right now!<br/>
+                            Click me right now!<br/>
+                          </Card.Text>
+                          <Button variant="secondary">Readmore</Button>
+                        </Card.Body>
+                      </Card>
                   </ul>
                 </div>
               </div>
