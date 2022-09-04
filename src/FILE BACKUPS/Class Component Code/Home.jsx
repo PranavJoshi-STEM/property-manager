@@ -95,6 +95,18 @@ class Home extends Component {
                         </Card.Body>
                       </Card>
                     </td>
+                    <td>
+                      <Card className="mb-3 && card_margin" style={{color:"#000"}}>
+                        <Card.Img src="https://picsum.photos/250/250"/>
+                        <Card.Body>
+                          <Card.Title> Login to your account now! </Card.Title>
+                          <Card.Text>
+                            Click me right now!
+                          </Card.Text>
+                          <Button variant="primary">Read More</Button>
+                        </Card.Body>
+                      </Card>
+                    </td>
                   </tr>
                 </table>
                 <br/>
